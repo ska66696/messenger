@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Simple Messenger</title>
+</head>
+
+<body>
+    <h1> Simple Messenger</h1>
+
+    <div id="content">
+        <h2>Регистрация</h2>
+        <form id="registrationForm">
+            <input type="text" id="regUsername" placeholder="Имя пользователя" required><br><br>
+            <input type="email" id="regEmail" placeholder="Email" required><br><br>
+            <input type="password" id="regPassword" placeholder="Пароль" required><br><br>
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+        <div id="registrationResult"></div>
+
+        <h2>Вход</h2>
+        <form id="loginForm">
+            <input type="text" id="loginUsername" placeholder="Имя пользователя" required><br><br>
+            <input type="password" id="loginPassword" placeholder="Пароль" required><br><br>
+            <button type="submit">Войти</button>
+        </form>
+        <div id="loginResult"></div>
+
+        <h2>Поиск пользователей</h2>
+        <input type="text" id="searchUsername" placeholder="Имя пользователя для поиска"><button
+            id="searchButton">Найти</button>
+        <div id="searchResults"></div>
+
+        <h2>Чаты</h2>
+        <div id="chatList">
+
+        </div>
+        <div id="chatMessages">
+
+        </div>
+        <form id="sendMessageForm">
+            <input type="text" id="messageText" placeholder="Текст сообщения" required><button
+                type="submit">Отправить</button>
+        </form>
+        <div id="sendMessageResult"></div>
+    </div>
+
+    <script>
+
+    </script>
+</body>
+
+</html>

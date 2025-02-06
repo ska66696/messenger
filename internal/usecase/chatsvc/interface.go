@@ -1,9 +1,9 @@
-package chat
+package chatsvc
 
 import "messenger/internal/entity"
 
 type UseCase interface {
-	CreateChat(userIDs string) (*entity.Chat, error)
+	CreateChat(userIDs []string) (*entity.Chat, error)
 	SendMessage(chatID, senderID, text string) (*entity.Massege, error)
 	GetChatMessages(chatID string) ([]*entity.Massege, error)
 	GetUserChats(userID string) ([]*entity.Chat, error)

@@ -2,7 +2,7 @@ package entity
 
 type Massege struct {
 	ID        string
-	ChatID    []string
+	ChatID    string
 	SenderID  string
 	Text      string
 	CreatedAt int64
